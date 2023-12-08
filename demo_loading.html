@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e7ee; /* Background color similar to previous pages */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.loading-container {
+  width: 800px; /* Width of the loading container */
+  height: 800px; /* Height of the loading container */
+  background-color: #ffffff; /* White background for the loading container */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container img {
+  width: 500px; /* Increased size of the GIF */
+  margin-bottom: 20px; /* Space between GIF and text */
+}
+
+.loading-text {
+  text-align: center;
+  color: #333;
+}
+</style>
+</head>
+<body>
+
+<div class="loading-container">
+  <!-- Make sure 'loading.gif' is the correct path to your GIF file -->
+  <img src="loading.gif" alt="Loading..."/>
+  <div class="loading-text">Loading...</div>
+</div>
+
+</body>
+<style>
+	/* ... Your existing styles ... */
+	</style>
+	<script>
+	// Function that redirects to demo_final.html after 5 seconds
+	function redirectToFinal() {
+	  setTimeout(function() {
+	    window.location.href = 'demo_final.html';
+	  }, 5000); // 5000 milliseconds = 5 seconds
+	}
+	
+	// Call redirectToFinal when the page loads
+	window.onload = redirectToFinal;
+	</script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contract Specifics</title>
+<style>
+	body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+		background-color: #e6e7ee;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	      }
+	      
+	      .form-container {
+		background-color: #ffffff;
+		width: 700px; /* Adjust as needed */
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		text-align: left;
+		margin-top: 20px; /* Adjusted for vertical centering */
+	      }
+	      
+	      .form-container h2 {
+		color: #333;
+		font-size: 24px; /* Modern font size */
+		margin-bottom: 30px;
+	      }
+	      
+	      .section {
+		background-color: #f4f7fc;
+		border-radius: 4px;
+		padding: 20px;
+		margin-bottom: 20px;
+		position: relative;
+	      }
+	      
+	      .section-header {
+		font-weight: bold;
+		color: #5b64e4; /* Theme color for headers */
+		margin-bottom: 15px;
+	      }
+	      
+	      .close-btn {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		cursor: pointer;
+		color: #cb2431; /* A red color for the close button */
+		font-size: 18px; /* Larger size for better interaction */
+	      }
+	      
+	      .section-content {
+		margin-bottom: 10px;
+	      }
+	      
+	      .input-group {
+		margin-bottom: 10px;
+	      }
+	      
+	      .input-group input, .input-group button {
+		padding: 10px;
+		margin-right: 10px;
+		border: none; /* No border for a modern look */
+		background-color: #fff; /* White background */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+		border-radius: 4px; /* Slightly rounded corners for a modern feel */
+		width: calc(25% - 12px); /* Equal width for 4 items with margin correction */
+	      }
+	      
+	      .input-group input:focus, .input-group button:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px #5b64e4; /* Focus ring matching the theme color */
+	      }
+	      
+	      .button {
+		background-color: #5b64e4;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+		border: none; /* No border for a modern look */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent shadow for buttons */
+		margin-top: 30px;
+		transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+	      }
+	      
+	      .button:hover {
+		background-color: #4a56d3;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow on hover */
+	      }
+	      
+	      .navigation-button {
+		float: right;
+	      }
+	      
+	      @media (max-width: 900px) {
+		.form-container {
+		  width: 90%;
+		  padding: 20px;
+		}
+	      
+		.input-group input, .input-group button {
+		  width: calc(50% - 12px); /* Adjust width for smaller screens */
+		}
+	      }
+	      
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>CONTRACT SPECIFICS</h2>
+  
+  <div class="section">
+    <div class="section-header">
+      Budget and Financials
+      <span class="close-btn">X</span>
+    </div>
+    <div class="section-content">
+      <p>Enter the estimated total budget and any important financial details or constraints.</p>
+      <div class="input-group">
+        <input type="text" placeholder="Budget Estimate">
+        <input type="text" placeholder="Payment Terms">
+        <input type="text" placeholder="Financial Milestones">
+        <input type="text" placeholder="Leverage Ratio">
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      Timeline and Milestones
+      <span class="close-btn">X</span>
+    </div>
+    <div class="section-content">
+      <p>Provide the project timeline, including key milestones and deadlines.</p>
+      <div class="input-group">
+        <input type="text" placeholder="Project Start Date">
+        <input type="text" placeholder="Major Milestones">
+      </div>
+    </div>
+  </div>
+  
+  <button class="button navigation-button" onclick="window.location.href='demo_compliance.html';">Next: Project Details</button>
+</div>
+
+</body>
+</html>

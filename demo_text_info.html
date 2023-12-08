@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Overview</title>
+<style>
+	body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+		background-color: #f4f7fc;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	      }
+	      
+	      .form-container {
+		background-color: #ffffff;
+		width: 800px; /* Adjusted for wider form */
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for modern look */
+		text-align: left;
+		color: #333; /* Dark gray for better contrast */
+	      }
+	      
+	      .form-container h2 {
+		font-size: 24px; /* Larger size for the title */
+		color: #333;
+		margin-bottom: 30px; /* More space below the title */
+	      }
+	      
+	      .text-area {
+		width: 100%;
+		padding: 15px; /* More padding inside text areas */
+		margin: 20px 0; /* More space between text areas */
+		border: 1px solid #ccc; /* Lighter border */
+		border-radius: 4px; /* Rounded corners for modern look */
+		height: 120px; /* Taller text areas */
+		resize: vertical;
+		font-family: inherit; /* Ensures the text area uses the same font */
+		font-size: 16px; /* Larger font size inside text areas */
+		box-sizing: border-box; /* Prevents padding from increasing the width */
+	      }
+	      
+	      .label {
+		display: block;
+		font-size: 16px; /* Clear and readable font size */
+		margin-top: 20px;
+		margin-bottom: 5px; /* Space above text areas */
+		color: #5b64e4; /* Color theme for labels */
+		font-weight: 600; /* Slightly bolder labels */
+	      }
+	      
+	      .button {
+		background-color: #5b64e4;
+		color: white;
+		padding: 12px 25px; /* Larger button for a modern look */
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 30px; /* More space above the button */
+		transition: all 0.3s; /* Smooth transition for hover effects */
+		outline: none; /* Remove outline to modernize the button */
+	      }
+	      
+	      .button:hover {
+		background-color: #4a56d3;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+	      }
+	      
+	      @media (max-width: 900px) {
+		.form-container {
+		  width: 90%;
+		  padding: 20px;
+		}
+	      }
+	      
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>PROJECT OVERVIEW</h2>
+  
+  <label for="project-description" class="label">PROJECT DESCRIPTION - Provide a brief overview of your construction project.</label>
+  <textarea id="project-description" class="text-area"></textarea>
+  
+  <label for="project-objectives" class="label">PROJECT OBJECTIVES - List the primary goals and expected outcomes of your project.</label>
+  <textarea id="project-objectives" class="text-area"></textarea>
+  
+  <label for="scope-of-work" class="label">SCOPE OF WORK - Detail the major deliverables, materials, and methods to be used.</label>
+  <textarea id="scope-of-work" class="text-area"></textarea>
+  
+  <div class="clearfix">
+    <button class="button" onclick="window.location.href='demo_timeline.html';">Next: Project Details</button>
+  </div>
+</div>
+
+</body>
+</html>
