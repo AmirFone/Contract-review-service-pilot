@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -58,6 +60,42 @@ body, html {
     <p>Thank you for choosing our proposal pilot for your proposal review needs.</p>
   </div>
 </div>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('Byc5i3oWzCDHmhaki'); // Initialize with your Public Key
+
+    window.onload = function() {
+        sendEmailOnLoad();
+    };
+
+    function sendEmailOnLoad() {
+        var data = {
+            service_id: 'default_service', // Replace with 'YOUR_SERVICE_ID' or use 'default_service'
+            template_id: 'template_38ggjxp', // Replace with your Template ID
+            user_id: 'Byc5i3oWzCDHmhaki', // Replace with your Public Key
+	    template_params: {
+                'to_email': 'recipient@example.com', // Replace with recipient's email
+                'to_name': 'Recipient Name', // Replace with recipient's name
+                'from_name': 'Sender Name', // Replace with sender's name
+                'message': 'Your message here' // Replace with your message
+            }
+        };
+
+        $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+        }).done(function() {
+            console.log('Email sent successfully');
+        }).fail(function(error) {
+            console.error('Email sending failed:', JSON.stringify(error));
+        });
+    }
+</script>
+
+
+
 
 </body>
 </html>
